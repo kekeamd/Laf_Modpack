@@ -13,3 +13,5 @@ recipes.removeByModid("pipez");
 recipes.removeByModid("storagenetwork");
 recipes.removeByModid("aquaculture");
 recipes.removeByModid("mysticalagriculture");
+recipes.removeByModid("onlyhammersandexcavators")
+recipes.removeByModid("cataclysm")
