@@ -9,10 +9,12 @@ Un modpack pour le serveur Multi-joueurs LAF
 ## A faire :
 - Shop par mods : Accès par rebirth
 - Lootbox (Crates)
-- Faires les mines
-- Fix le curios (GUI)
-- Faire une zone d'interaction commande bloc (Artifacts pour les Curios si problème persiste)
+- Faires les accès des mines
+- Problème des skins ?
 - Retravailler le GIT afin d'avoir une meilleure gestion des mods
+- Modifier les plantations (Ajouts Growth Accelerator)
+- Modification S.D.C. : Ajout Coffre modé
+- Fix les fichiers de désactivation des crafts
 
 
 ## Idées :
