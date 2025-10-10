@@ -1,0 +1,30 @@
+function equalsLoc(loc1: numbers, loc2: numbers) :: number:
+    # TEST POUR LES 3 PREMIERES Valeurs
+    if {_loc1::1} == {_loc2::1}:
+        if {_loc1::2} == {_loc2::2}:
+            if {_loc1::3} == {_loc2::3}:
+                return 1
+    return 0
+
+function nearest(loc1: numbers) :: player:
+    if size of {_loc1::*} == 3:
+        set {_mindist} to 0
+        set {_myPlayer} to none
+        set {_players::*} to all players
+        loop {_players::*}:
+            set {_current} to loop-value
+            set {_coords::*} to x-coords of {_current}, y-coords of {_current} and z-coords of {_current}
+            set {_diffX} to ({_loc1::1} - {_coords::1}) * ({_loc1::1} - {_coords::1})
+            set {_diffY} to ({_loc1::2} - {_coords::2}) * ({_loc1::2} - {_coords::2})
+            set {_diffZ} to ({_loc1::3} - {_coords::3}) * ({_loc1::3} - {_coords::3})
+            set {_diffCords} to {_diffX} + {_diffY} + {_diffZ}
+            if {_mindist} > 0 :
+                if {_diffCords} < {_mindist}:
+                    set {_mindist} to {_diffCords}
+                    set {_myPlayer} to {_current}
+            else:
+                set {_mindist} to {_diffCords}
+                set {_myPlayer} to {_current}
+        return {_myPlayer}
+    else:
+        broadcast "Erreur dans les coords en entrée !"

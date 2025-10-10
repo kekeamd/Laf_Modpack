@@ -1,0 +1,17 @@
+on redstone change:
+    if event-block is command block:
+        set {_locStr} to "%x of event-block%_%y of event-block%_%z of event-block%"
+        set {_old} to {prevPower::%{_locStr}%}  # 0 si non défini
+        set {_new} to redstone power of event-block
+
+        if {_new} > {_old}:
+            set {_tmpLoc} to location of event-block
+            set {_x} to x-coord of {_tmpLoc}
+            set {_y} to y-coord of {_tmpLoc}
+            set {_z} to z-coord of {_tmpLoc}
+            set {CBExecutor::*} to {_x}, {_y} and {_z}
+
+        set {prevPower::%{_locStr}%} to {_new}
+
+
+

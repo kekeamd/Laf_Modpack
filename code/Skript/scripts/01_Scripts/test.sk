@@ -1,0 +1,46 @@
+command /listplayers_try:
+    permission: test.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    trigger:
+        if sender is player:
+            set {_sender} to sender
+            set {_senderLoc::*} to x-coords of {_sender}, y-coords of {_sender} and z-coords of {_sender}
+            broadcast "Sender Loc : %{_senderLoc::*}%"
+        else:
+            broadcast "Sender Is a Command Block"
+            broadcast "%{CBExecutor::*}%"
+
+command /try_near:
+    permission: test.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    trigger:
+        if sender is player:
+            set {_sender} to sender
+            set {_senderLoc::*} to x-coords of {_sender}, y-coords of {_sender} and z-coords of {_sender}
+            broadcast "Sender Loc : %{_senderLoc::*}%"
+            broadcast "Nearest : %nearest({_senderLoc::*})%"
+        else:
+            broadcast "Sender Is a Command Block"
+            broadcast "%{CBExecutor::*}%"
+            broadcast "Nearest : %nearest({CBExecutor::*})%"
+
+command /spawn_near:
+    permission: test.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    trigger:
+        if sender is player:
+            set {_sender} to sender
+            set {_senderLoc::*} to x-coords of {_sender}, y-coords of {_sender} and z-coords of {_sender}
+            set {_player_to_choose} to nearest({_senderLoc::*})
+        else:
+            set {_player_to_choose} to nearest({CBExecutor::*})
+        broadcast "Joueur le plus proche : %{_player_to_choose}%"
+        execute console command "/spawn %{_player_to_choose}%"
+
+command /stoneset <number> <number> <number> <number> <number> <number>:
+    permission: test.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    trigger:
+        execute player command "//pos1 %arg-1%,%arg-2%,%arg-3%"
+        execute player command "//pos2 %arg-4%,%arg-5%,%arg-6%"
+        execute player command "//set stone"

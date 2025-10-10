@@ -1,0 +1,48 @@
+command /rebirth <text> [<text=none>] [<number=5>]:
+    permission: player.zone.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    description: Rebirth d'un joueur
+    usage: /rebirth [joueur] <[zone_player]> <[nbr_ext]>
+    trigger:
+        set {_pve_zone::*} to "pve_plaine", "pve_desert", "pve_cave", "pve_ice", "pve_village" and "pve_manoir"
+        set {_mine_zone::*} to "mine1", "mine2", "mine3" and "mine4"
+        set {_zone_list::*} to ListAddToList_text({_pve_zone::*},{_mine_zone::*})
+
+        loop {_zone_list::*}:
+            execute player command "/rg removemember -w ""world"" %loop-value% %arg-1%"
+        
+        if arg-2 != "none":
+            set {_zone_name} to arg-2
+            set {_dionysos::*} to "none_value"
+            set {_demeter::*} to "none_value"
+            loop 20 times:
+                add "dionysos%loop-value%" to {_dionysos::*}
+                add "demeter%loop-value%" to {_demeter::*}
+            send {_zone_name}
+            if if_in_list({_zone_name}, {_dionysos::*}) or if_in_list({_zone_name}, {_demeter::*}):
+                loop arg-3 times:
+                    execute player command "/rg delete -w ""world"" %{_zone_name}%_ext%loop-value%"
+            else:
+                send "Zone de player non valide !"
+
+command /addAccessNearby <text>:
+    permission: player.zone.admin
+    permission message: Vous n'avez pas la permission pour faire ça !
+    description: Donne l'accès au player le plus proche à la zone passé en paramètre
+    usage: /addAccessNearby [zone]
+    trigger:
+        if sender is player:
+            set {_sender} to sender
+            set {_senderLoc::*} to x-coords of {_sender}, y-coords of {_sender} and z-coords of {_sender}
+            set {_player_to_choose} to nearest({_senderLoc::*})
+        else:
+            set {_player_to_choose} to nearest({CBExecutor::*})
+        set {_pve_zone::*} to "pve_plaine", "pve_desert", "pve_cave", "pve_ice", "pve_village" and "pve_manoir"
+        set {_mine_zone::*} to "mine1", "mine2", "mine3" and "mine4"
+        set {_zone_list::*} to ListAddToList_text({_pve_zone::*},{_mine_zone::*})
+        if if_in_list(arg-1, {_zone_list::*}):
+            send "--=============--" to console
+            execute console command "/rg addmember -w ""world"" %arg-1% %{_player_to_choose}%"
+            send "Accès à la zone '%arg-1%' accordé à '%{_player_to_choose}%'" to console
+        else:
+            send "Zone de non valide !"
