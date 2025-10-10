@@ -4,4 +4,4 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.ItemDefinition;
 import stdlib.List;
 
-recipes.remove("minecraft:lead");
+recipes.removeByName("minecraft:lead");
