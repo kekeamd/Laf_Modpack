@@ -2,6 +2,7 @@ command /listplayers_try:
     permission: test.admin
     permission message: Vous n'avez pas la permission pour faire ça !
     trigger:
+        broadcast "%sender%"
         if sender is player:
             set {_sender} to sender
             set {_senderLoc::*} to x-coords of {_sender}, y-coords of {_sender} and z-coords of {_sender}

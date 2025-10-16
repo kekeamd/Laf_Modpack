@@ -1,0 +1,63 @@
+pages:
+  page1:
+    items:
+      '2':
+        material: AMETHYST_SHARD
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 1.0
+        sell: 1.0
+        name: 1$
+        enchantments:
+        - DURABILITY:255
+      '3':
+        material: PHANTOM_MEMBRANE
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 50.0
+        sell: 50.0
+        name: 50$
+        enchantments:
+        - DURABILITY:255
+      '4':
+        material: ECHO_SHARD
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 100.0
+        sell: 100.0
+        name: 100$
+        enchantments:
+        - DURABILITY:255
+      '5':
+        material: DISC_FRAGMENT_5
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 1000.0
+        sell: 1000.0
+        name: 1000$
+        enchantments:
+        - DURABILITY:255
+      '6':
+        material: SUGAR
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 10000.0
+        sell: 10000.0
+        name: 10 000$
+        enchantments:
+        - DURABILITY:255
+      '7':
+        material: DRAGON_BREATH
+        lore:
+        - '&9Absorption V'
+        - '&fGlowing CCLV'
+        buy: 100000.0
+        sell: 100000.0
+        name: 100 000$
+        enchantments:
+        - DURABILITY:255

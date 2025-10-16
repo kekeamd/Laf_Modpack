@@ -1,7 +1,11 @@
 on redstone change:
     if event-block is command block:
         set {_locStr} to "%x of event-block%_%y of event-block%_%z of event-block%"
-        set {_old} to {prevPower::%{_locStr}%}  # 0 si non défini
+        if {prevPower::%{_locStr}%} is not set:
+            broadcast "[LOG] : JAMAIS SET !"
+            set {_old} to 0
+        else:
+            set {_old} to {prevPower::%{_locStr}%}  # 0 si non défini
         set {_new} to redstone power of event-block
 
         if {_new} > {_old}:

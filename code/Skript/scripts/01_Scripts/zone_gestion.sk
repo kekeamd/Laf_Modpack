@@ -25,7 +25,7 @@ command /rebirth <text> [<text=none>] [<number=5>]:
             else:
                 send "Zone de player non valide !"
 
-command /addAccessNearby <text>:
+command /addAccessNearby <text> [<text=none>]:
     permission: player.zone.admin
     permission message: Vous n'avez pas la permission pour faire ça !
     description: Donne l'accès au player le plus proche à la zone passé en paramètre
@@ -44,5 +44,7 @@ command /addAccessNearby <text>:
             send "--=============--" to console
             execute console command "/rg addmember -w ""world"" %arg-1% %{_player_to_choose}%"
             send "Accès à la zone '%arg-1%' accordé à '%{_player_to_choose}%'" to console
+            if arg-2 != "none":
+                send "Tu as maintenant accès à la zone : '%arg-2%'" to {_player_to_choose}
         else:
             send "Zone de non valide !"

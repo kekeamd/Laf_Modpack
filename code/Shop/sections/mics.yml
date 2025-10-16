@@ -1,0 +1,14 @@
+enable: true
+slot: 14
+title: '&lMisc'
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: WHITE_WOOL
+  displayname: '&lMics'
+  name: '&lMics'
