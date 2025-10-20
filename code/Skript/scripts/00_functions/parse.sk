@@ -1,0 +1,2 @@
+function toInt(str: text) :: number:
+    return {_str}

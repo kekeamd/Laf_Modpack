@@ -10,8 +10,10 @@
 ### Commands :
 - `/shop`
 - `/sethome` (Jusqu'à 3)
+- `/home`
 - `/spawn`
 - `/warp` 
+- `/jobs`
 
 ## 1 :
 - Pocket Storage
