@@ -1,0 +1,93 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: ROTTEN_FLESH
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '2':
+        material: GUNPOWDER
+        buy: -1.0
+        sell: 50.0
+        stack-size: 16
+      '3':
+        material: BONE
+        buy: -1.0
+        sell: 50.0
+        stack-size: 24
+      '4':
+        material: ARROW
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '5':
+        material: SPIDER_EYE
+        buy: -1.0
+        sell: 100.0
+        stack-size: 16
+      '6':
+        material: STRING
+        buy: -1.0
+        sell: 100.0
+        stack-size: 32
+      '7':
+        material: TIPPED_ARROW
+        buy: -1.0
+        sell: 40.0
+        stack-size: 16
+        potiontypes:
+        - SLOWNESS
+      '8':
+        material: SKELETON_SKULL
+        buy: -1.0
+        sell: 50.0
+      '9':
+        material: CREEPER_HEAD
+        buy: -1.0
+        sell: 50.0
+      '10':
+        material: SUGAR
+        buy: -1.0
+        sell: 50.0
+        stack-size: 38
+      '11':
+        material: REDSTONE
+        buy: -1.0
+        sell: 40.0
+        stack-size: 64
+      '12':
+        material: GLASS_BOTTLE
+        buy: -1.0
+        sell: 50.0
+        stack-size: 64
+      '13':
+        material: STICK
+        buy: -1.0
+        sell: 6.0
+        stack-size: 64
+      '14':
+        material: GLOWSTONE_DUST
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '15':
+        material: EMERALD
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '16':
+        material: TOTEM_OF_UNDYING
+        buy: -1.0
+        sell: 200.0
+      '17':
+        material: WHITE_BANNER
+        buy: -1.0
+        sell: 50.0
+        stack-size: 16
+        name: §6Ominous Banner
+      '18':
+        material: SCUTE
+        buy: -1.0
+        sell: 100.0
+        stack-size: 10

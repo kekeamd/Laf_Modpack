@@ -1,0 +1,5 @@
+enable: true
+item:
+  material: OAK_LOG
+  displayname: '&lPlantation'
+slot: 29

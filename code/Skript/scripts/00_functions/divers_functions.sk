@@ -1,0 +1,5 @@
+function kick_all():
+    set {_players::*} to all players
+    loop {_players::*}:
+        execute console command "/kick %loop-value% Commande lourde exectuer, veuillez vous reconnecter."
+    send "Tout les joueurs ont été exclus de la partie !" to console

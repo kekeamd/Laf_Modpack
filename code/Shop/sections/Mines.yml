@@ -1,0 +1,5 @@
+enable: true
+item:
+  material: STONE
+  displayname: '&lMines'
+slot: 30

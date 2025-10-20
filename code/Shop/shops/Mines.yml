@@ -1,0 +1,178 @@
+pages:
+  page1:
+    items:
+      '2':
+        material: COBBLESTONE
+        buy: -1.0
+        sell: 1.0
+        stack-size: 32
+      '3':
+        material: STONE
+        buy: -1.0
+        sell: 3.0
+        stack-size: 32
+      '4':
+        material: COAL
+        buy: -1.0
+        sell: 5.0
+        stack-size: 32
+      '5':
+        material: COAL_BLOCK
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '6':
+        material: RAW_COPPER
+        buy: -1.0
+        sell: 6.0
+        stack-size: 32
+      '7':
+        material: COPPER_INGOT
+        buy: -1.0
+        sell: 8.0
+        stack-size: 32
+      '8':
+        material: COPPER_BLOCK
+        buy: -1.0
+        sell: 38.0
+        stack-size: 16
+      '9':
+        material: RAW_IRON
+        buy: -1.0
+        sell: 7.0
+        stack-size: 32
+      '10':
+        material: IRON_INGOT
+        buy: -1.0
+        sell: 9.0
+        stack-size: 32
+      '11':
+        material: IRON_BLOCK
+        buy: -1.0
+        sell: 45.0
+        stack-size: 16
+      '12':
+        material: BASALT
+        buy: -1.0
+        sell: 6.0
+        stack-size: 64
+      '13':
+        material: GRANITE
+        buy: -1.0
+        sell: 2.0
+        stack-size: 64
+      '14':
+        material: RAW_GOLD
+        buy: -1.0
+        sell: 14.0
+        stack-size: 32
+      '15':
+        material: GOLD_INGOT
+        buy: -1.0
+        sell: 17.0
+        stack-size: 32
+      '16':
+        material: GOLD_BLOCK
+        buy: -1.0
+        sell: 40.0
+        stack-size: 8
+      '17':
+        material: COBBLED_DEEPSLATE
+        buy: -1.0
+        sell: 2.0
+        stack-size: 32
+      '18':
+        material: DEEPSLATE
+        buy: -1.0
+        sell: 4.0
+        stack-size: 32
+      '19':
+        material: DIORITE
+        buy: -1.0
+        sell: 3.0
+        stack-size: 64
+      '20':
+        material: OBSIDIAN
+        buy: -1.0
+        sell: 50.0
+        stack-size: 16
+      '21':
+        material: REDSTONE
+        buy: -1.0
+        sell: 20.0
+        stack-size: 32
+      '22':
+        material: REDSTONE_BLOCK
+        buy: -1.0
+        sell: 200.0
+        stack-size: 32
+      '23':
+        material: LAPIS_LAZULI
+        buy: -1.0
+        sell: 20.0
+        stack-size: 32
+      '24':
+        material: LAPIS_BLOCK
+        buy: -1.0
+        sell: 200.0
+        stack-size: 32
+      '25':
+        material: ANDESITE
+        buy: -1.0
+        sell: 4.0
+        stack-size: 32
+      '27':
+        material: QUARTZ
+        buy: -1.0
+        sell: 45.0
+        stack-size: 32
+        displayname: '&r&lQuartz'
+        name: '&r&lQuartz'
+      '28':
+        material: QUARTZ_BLOCK
+        buy: -1.0
+        sell: 200.0
+        stack-size: 16
+        displayname: '&r&lBlock of Quartz'
+        name: Block of Quartz
+      '30':
+        material: EMERALD
+        buy: -1.0
+        sell: 100.0
+        stack-size: 32
+        name: emerald
+        displayname: '&r&lEmerald'
+      '31':
+        material: EMERALD_BLOCK
+        buy: -1.0
+        sell: 1000.0
+        stack-size: 32
+        name: Emerald Block
+        displayname: '&r&lEmerald Block'
+      '33':
+        material: END_STONE
+        buy: -1.0
+        sell: 600.0
+        displayname: '&r&lEnd Stone'
+        name: End Stone
+      '32':
+        material: BLACKSTONE
+        buy: -1.0
+        sell: 10.0
+        stack-size: 64
+        displayname: '&r&lBlack Stone'
+        name: Black Stone
+      '34':
+        material: DIAMOND
+        buy: -1.0
+        sell: 200.0
+        stack-size: 32
+        displayname: '&r&lDiamond'
+        name: Diamond
+      '35':
+        material: DIAMOND_BLOCK
+        buy: -1.0
+        sell: 2000.0
+        stack-size: 32
+        name: Diamond Block
+        displayname: '&r&lDiamond Block'

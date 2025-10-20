@@ -1,6 +1,6 @@
 enable: true
-slot: 10
-title: ''
+slot: 34
+title: '&6&lCrates'
 hidden: false
 sub-section: false
 display-item: false
@@ -9,6 +9,6 @@ fill-item:
 nav-bar:
   mode: INHERIT
 item:
-  material: GRASS_BLOCK
-  displayname: '&2&lBlocks'
-  name: '&a&lMoney'
+  material: TRIPWIRE_HOOK
+  displayname: '&6&lCrates'
+  name: '&6&lCrates'

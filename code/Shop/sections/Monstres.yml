@@ -1,6 +1,6 @@
 enable: true
-slot: 19
-title: ''
+slot: 32
+title: '&lMonstres'
 hidden: false
 sub-section: false
 display-item: false
@@ -9,6 +9,6 @@ fill-item:
 nav-bar:
   mode: INHERIT
 item:
-  material: WHITE_WOOL
-  displayname: '&lMics'
-  name: '&lMics'
+  material: ROTTEN_FLESH
+  displayname: '&lMonstres'
+  name: '&lMonstres'

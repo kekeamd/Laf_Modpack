@@ -1,0 +1,168 @@
+pages:
+  page1:
+    items:
+      '3':
+        material: OAK_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '2':
+        material: SPRUCE_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '4':
+        material: DARK_OAK_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '5':
+        material: JUNGLE_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '6':
+        material: BIRCH_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '7':
+        material: ACACIA_PLANKS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '8':
+        material: STICK
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '9':
+        material: WHEAT
+        buy: -1.0
+        sell: 15.0
+        stack-size: 32
+      '10':
+        material: WHEAT_SEEDS
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '11':
+        material: POTATO
+        buy: -1.0
+        sell: 7.0
+        stack-size: 32
+      '12':
+        material: POISONOUS_POTATO
+        buy: -1.0
+        sell: 15.0
+        stack-size: 32
+      '13':
+        material: CARROT
+        buy: -1.0
+        sell: 16.0
+        stack-size: 64
+      '14':
+        material: BEETROOT
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '15':
+        material: BEETROOT_SEEDS
+        buy: -1.0
+        sell: 20.0
+        stack-size: 64
+      '16':
+        material: PUMPKIN
+        buy: -1.0
+        sell: 50.0
+        stack-size: 28
+      '17':
+        material: MELON_SLICE
+        buy: -1.0
+        sell: 15.0
+        stack-size: 64
+      '18':
+        material: MELON
+        buy: -1.0
+        sell: 25.0
+        stack-size: 32
+      '19':
+        material: PUMPKIN_SEEDS
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '20':
+        material: MELON_SEEDS
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '21':
+        material: SUGAR_CANE
+        buy: -1.0
+        sell: 50.0
+        stack-size: 48
+      '22':
+        material: SUGAR
+        buy: -1.0
+        sell: 50.0
+        stack-size: 38
+      '23':
+        material: PAPER
+        buy: -1.0
+        sell: 50.0
+        stack-size: 32
+      '24':
+        material: SWEET_BERRIES
+        buy: -1.0
+        sell: 50.0
+        stack-size: 64
+      '25':
+        material: CACTUS
+        buy: -1.0
+        sell: 50.0
+        stack-size: 64
+      '26':
+        material: GREEN_DYE
+        buy: -1.0
+        sell: 50.0
+        stack-size: 48
+      '27':
+        material: APPLE
+        buy: -1.0
+        sell: 10.0
+        stack-size: 32
+      '28':
+        material: GOLDEN_APPLE
+        buy: -1.0
+        sell: 100.0
+        stack-size: 16
+      '29':
+        material: JUNGLE_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '30':
+        material: DARK_OAK_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '31':
+        material: BIRCH_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '32':
+        material: ACACIA_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '33':
+        material: SPRUCE_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64
+      '34':
+        material: OAK_SAPLING
+        buy: -1.0
+        sell: 5.0
+        stack-size: 64

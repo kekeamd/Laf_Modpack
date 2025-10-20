@@ -5,10 +5,8 @@ import crafttweaker.api.item.ItemDefinition;
 import stdlib.List;
 
 recipes.removeByModid("elevatorid");
-recipes.removeByModid("constructionwand");
 recipes.removeByModid("beaconrevisioned");
 recipes.removeByModid("ironchest");
-recipes.removeByModid("ironfurnaces");
 recipes.removeByModid("pipez");
 recipes.removeByModid("storagenetwork");
 recipes.removeByModid("aquaculture");

@@ -15,3 +15,9 @@ Un modpack pour le serveur Multi-joueurs LAF
 ## Idées :
 - Système de Shop alternatif
 - /Daily : Challenge journalier avec récompenses
+
+## Build :
+- Zone de TP multi-zone
+- Shop Rebirth (Zones Par mods)
+- Gestion automatique des Zones PVE (Shop + Give Accès)
+- Gestion des Extentions + Modifications de zones

@@ -1,0 +1,25 @@
+import:
+  com.gamingmesh.jobs.api.JobsLevelUpEvent
+
+on JobsLevelUpEvent:
+  # Récupère le niveau monté
+  set {_lvl} to event.getLevel()
+  set {_job} to "%event.getJob().getName()%"
+  set {_player} to event.getPlayer().getPlayer()
+  set {_gainsMult::"miner"} to 25
+
+  send "========== DEBUT PASSAGE DE NIVEAU ==========" to console
+
+  if {_gainsMult::"%{_job}%"} is not set:
+    send "Bravo ! Tu viens de passer un niveau ! Cependant ton job n'est pas éligible aux récompenses de niveaux." to {_player}
+    send "Le joueur '%{_player}%' a atteint le niveau %{_lvl}% dans le job '%{_job}%'." to console
+    send "Le joueur n'a pas obtenu de récompense de niveau." to console
+  else:
+    set {_gain} to ({_lvl}-1) * {_gainsMult::"%{_job}%"}
+    execute console command "eco give %{_player}% %{_gain}%"
+    send "&aBravo ! Tu viens d'atteindre le niveau %{_lvl}% en %event.getJob().getName()% et gagnes %{_gain}%$" to {_player}
+    send "Le joueur '%{_player}%' a atteint le niveau %{_lvl}% dans le job '%{_job}%'" to console
+    send "Le joueur a obtenu :" to console
+    send "%{_gain}%$" to console
+  
+  send "========== FIN PASSAGE DE NIVEAU ==========" to console

@@ -6,6 +6,7 @@
 - Only Hammers and excavators
 - trashcans
 - Drawers
+- Construction Wand
 
 ## 1 :
 - Pocket Storage

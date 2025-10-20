@@ -1,0 +1,50 @@
+pages:
+  page1:
+    items:
+      '2':
+        material: TRIPWIRE_HOOK
+        lore:
+        - '&7Une clé spéciale'
+        - '&7Pour une Caisse Commune.'
+        - '&7Valeur récompense minimum : 350$.'
+        buy: 1000.0
+        sell: -1.0
+        name: §b§lClé §f§lde §a§lCaisse Commune
+        enchantments:
+        - LUCK:1
+      '4':
+        material: ENDER_CHEST
+        buy: -1.0
+        sell: 300.0
+      '5':
+        material: TRIPWIRE_HOOK
+        lore:
+        - '&7Une clé spéciale'
+        - '&7Pour une Caisse Rare.'
+        - '&7Valeur récompense minimum : 2500$.'
+        buy: 5000.0
+        sell: -1.0
+        name: §b§lClé §f§lde §b§lCaisse Rare
+        enchantments:
+        - LUCK:1
+      '6':
+        material: REDSTONE_BLOCK
+        buy: -1.0
+        sell: 200.0
+        stack-size: 32
+      '7':
+        material: TRIPWIRE_HOOK
+        lore:
+        - '&7Une clé spéciale'
+        - '&7Pour une Caisse Epique.'
+        - '&7Valeur récompense minimum : 5200$.'
+        buy: 10000.0
+        sell: -1.0
+        name: §b§lClé §f§lde §5§lCaisse Epique
+        enchantments:
+        - LUCK:1
+      '8':
+        material: LEAD
+        buy: -1.0
+        sell: 1300.0
+        stack-size: 16
