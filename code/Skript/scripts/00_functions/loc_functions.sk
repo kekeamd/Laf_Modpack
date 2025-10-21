@@ -30,11 +30,9 @@ function nearest(loc1: numbers) :: player:
         broadcast "Erreur dans les coords en entrée !"
 
 function getPlayer(plName: text) :: player:
-    set {_myPlayer} to none
+    set {_myPlayer} to 0
     set {_players::*} to all players
     loop {_players::*}:
-        broadcast "%loop-value%"
-        if loop-value == {_plName}:
-            broadcast "Je t'ai trouvé !"
+        if name of loop-value == {_plName}:
             set {_myPlayer} to loop-value
     return {_myPlayer}

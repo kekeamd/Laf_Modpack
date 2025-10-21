@@ -45,3 +45,12 @@ command /stoneset <number> <number> <number> <number> <number> <number>:
         execute player command "//pos1 %arg-1%,%arg-2%,%arg-3%"
         execute player command "//pos2 %arg-4%,%arg-5%,%arg-6%"
         execute player command "//set stone"
+
+command /getGroup <text>:
+    trigger:
+        set {_myPl} to getPlayer(arg-1)
+        if {_myPl} is set:
+            send "Le groupe de %{_myPl}% est %group of {_myPl}%"
+        else:
+            send "Player not exists"
+

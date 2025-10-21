@@ -6,7 +6,7 @@ on JobsLevelUpEvent:
   set {_lvl} to event.getLevel()
   set {_job} to "%event.getJob().getName()%"
   set {_player} to event.getPlayer().getPlayer()
-  set {_gainsMult::"miner"} to 25
+  set {_gainsMult::"miner"} to 50
 
   send "========== DEBUT PASSAGE DE NIVEAU ==========" to console
 
@@ -21,5 +21,7 @@ on JobsLevelUpEvent:
     send "Le joueur '%{_player}%' a atteint le niveau %{_lvl}% dans le job '%{_job}%'" to console
     send "Le joueur a obtenu :" to console
     send "%{_gain}%$" to console
-  
+    if {_job} == "miner":
+      execute console command "effect give %{_player}% haste %{_lvl} * 120% %{_lvl}%"
+      send "Haste %{_lvl}% pendant %{_lvl} * 120% secondes." to console
   send "========== FIN PASSAGE DE NIVEAU ==========" to console

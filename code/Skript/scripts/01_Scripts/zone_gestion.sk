@@ -1,4 +1,4 @@
-command /rebirth <text> [<text=none>] [<number=5>]:
+command /rebirth <text> [<number=0>] [<text=none>] [<number=5>]:
     permission: player.zone.admin
     permission message: Vous n'avez pas la permission pour faire ça !
     description: Rebirth d'un joueur
@@ -7,12 +7,44 @@ command /rebirth <text> [<text=none>] [<number=5>]:
         set {_pve_zone::*} to "pve_plaine", "pve_desert", "pve_cave", "pve_ice", "pve_village" and "pve_manoir"
         set {_mine_zone::*} to "mine1", "mine2", "mine3" and "mine4"
         set {_zone_list::*} to ListAddToList_text({_pve_zone::*},{_mine_zone::*})
+        set {_mygroups::*} to "none"
+        loop 8 times: # CREATION DE LA LISTE DES REBIRTH
+            add "Rebirth %loop-value%" to {_mygroups::*}
 
         loop {_zone_list::*}:
-            execute player command "/rg removemember -w ""world"" %loop-value% %arg-1%"
-        
-        if arg-2 != "none":
-            set {_zone_name} to arg-2
+            execute console command "/rg removemember -w ""world"" %loop-value% %arg-1%"
+        send "Les droits aux zones de l'utilisateurs ont été supprimé."
+
+        if arg-2 != 0:
+            set {_myPl} to getPlayer(arg-1)
+            if {_myPl} is set: # VERIFICATION DE SI LE JOUEUR EXISTE
+                set {_plGr} to group of {_myPl} # RECUPERATION DU GROUPE DU JOUEUR
+                set {_lastRb} to last element of {_mygroups::*}
+                if if_in_list({_plGr},{_mygroups::*}): # VERIFICATION DE SI IL A DEJA UN REBIRTH
+                    if {_plGr} != {_lastRb}: # VERIFICATION QU'IL N'EST PAS DEJA AU DERNIER REBIRTH
+                        # RECUPERATION DU NUMERO DU REBIRTH
+                        set {_ln} to length of {_plGr}
+                        set {_nbRb} to substring of {_plGr} from {_ln} to {_ln}
+                        set {_newRb} to toInt10({_nbRb})
+                        add 1 to {_newRb}
+                        # SUPPRESSION DE L'ANCIEN REBIRTH ET AJOUT DU NOUVEAU
+                        execute console command "/lp user %arg-1% parent remove rebirth.%{_nbRb}%"
+                        execute console command "/lp user %arg-1% parent add rebirth.%{_newRb}%"
+                        send "Le joueur %arg-1% vient d'obtenir son %{_newRb}% rebirth"
+                        send "Tu viens d'obtenir ton %{_newRb}% rebirth" to {_myPl}
+                    else:
+                        send "Le joueur à déjà le grade Maximum !"
+                        send "Vous venez de Rebirth !" to {_myPl}
+                else: # CAS OU IL N'A PAS DE REBIRTH
+                    broadcast "Le joueur %arg-1% débloque son Premier Rebirth !!!"
+                    # SUPPRESSION DU GROUPE DEFAULT ET AJOUT DU PREMIER REBIRTH
+                    execute console command "/lp user %arg-1% parent remove default"
+                    execute console command "/lp user %arg-1% parent add rebirth.1"
+            else:
+                send "Le joueur n'existe pas !"
+            
+        if arg-3 != "none":
+            set {_zone_name} to arg-3
             set {_dionysos::*} to "none_value"
             set {_demeter::*} to "none_value"
             loop 20 times:
@@ -20,7 +52,7 @@ command /rebirth <text> [<text=none>] [<number=5>]:
                 add "demeter%loop-value%" to {_demeter::*}
             send {_zone_name}
             if if_in_list({_zone_name}, {_dionysos::*}) or if_in_list({_zone_name}, {_demeter::*}):
-                loop arg-3 times:
+                loop arg-4 times:
                     execute player command "/rg delete -w ""world"" %{_zone_name}%_ext%loop-value%"
             else:
                 send "Zone de player non valide !"

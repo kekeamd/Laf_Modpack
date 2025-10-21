@@ -1,2 +1,12 @@
-function toInt(str: text) :: number:
-    return {_str}
+function toInt10(str: text) :: number:
+    set {_strList::*} to "0"
+    set {_nbrList::*} to 0
+    set {_n} to 10
+    set {_nbr} to -1
+    loop {_n} times:
+        add loop-value to {_nbrList::*}
+        add "%loop-value%" to {_strList::*}
+    loop {_n} + 1 times:
+        if {_str} == {_strList::%loop-value%}:
+            set {_nbr} to {_nbrList::%loop-value%}
+    return {_nbr}
