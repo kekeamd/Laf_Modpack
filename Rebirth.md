@@ -41,12 +41,14 @@
 - Mystical Agriculture (**Tier 2** : __Inferium__)
 - Artifacts **PART 2**
 - Crafting Automat
-- Aquaculture
+### Commands :
+- `/sellall inventory` (vends tout ce qui peut être vendu dans votre inventaire)
 
 ## 4 :
 - Mystical Agriculture (**Tier 3** : __Outils de farms **TIER FINAL : Supremium + Awakned**__)
 - Artifacts **PART FINAL**
 - Beacon revisioned
+- Aquaculture
 
 ## 5 : 
 - Mystical Agriculture (**Tier 4** : __Graines de minerais__)
