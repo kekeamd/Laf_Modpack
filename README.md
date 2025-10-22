@@ -18,6 +18,6 @@ Un modpack pour le serveur Multi-joueurs LAF
 
 ## Build :
 - Zone de TP multi-zone
-- Shop Rebirth (Zones Par mods)
-- Gestion automatique des Zones PVE (Shop + Give Accès)
+- Gestion automatique des Zones PVE (Shop + Give Accès) + Accès FISH et portail
 - Gestion des Extentions + Modifications de zones
+- Zone Fishing + Shop Fish intégré
